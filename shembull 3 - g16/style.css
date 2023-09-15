@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --skyblueColor: rgb(79, 132, 223);
+    --orangeColor: rgb(255, 142, 104);
+    --ovalBackground: linear-gradient(90deg, rgb(210, 210, 210) 0%, rgb(227, 227, 227) 100%);
+    --headerBackground: linear-gradient(90deg, rgba(12, 85, 211, 1) 0%, rgba(101, 148, 227, 1) 100%);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 65%;
+    margin: auto;
+}
+
+.headerSection {
+    /* height: 100vh; */
+    background: linear-gradient(90deg, rgba(12, 85, 211, 1) 0%, rgba(101, 148, 227, 1) 100%);
+    ;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    color: #fff;
+    height: 70px;
+    /* background-color: #fff; */
+}
+
+header * {
+    color: #fff;
+}
+
+.logoContainer {
+    width: 20%;
+    display: flex;
+}
+
+.logoContainer>a {
+    font-size: 22px;
+}
+
+.logoDot {
+    position: relative;
+    top: 15px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--orangeColor);
+    border-radius: 100%;
+}
+
+.navSupport {
+    width: 25%;
+}
+
+.logoContainer>a,
+.navli>a,
+.navSupport>a {
+    text-decoration: none;
+}
+
+nav {
+    width: 40%;
+}
+
+.navul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.navSupport>a,
+.loginbutton {
+    text-transform: capitalize;
+    padding: 4px 25px;
+}
+
+.loginbutton {
+    background-color: var(--orangeColor);
+    border-radius: 3px;
+}
+
+
+/* mbaron header */
+/* fillon hero */
+
+.hero {
+    display: flex;
+    align-items: center;
+}
+
+.hero_text {
+    width: 50%;
+}
+
+.hero_link {}
+
+.hero_image {
+    width: 50%;
+}
+
+.hero_image>img {
+    width: 100%;
+}
+
+/* mbaron hero */
+/* fillon stats */
+
+.stats_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats_card {
+    border-radius: 3px;
+    width: 25%;
+    height: 250px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats_card_img {
+    display: grid;
+    place-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    box-shadow: 2px 9px 13px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.stats_card_img>svg {
+    fill: var(--skyblueColor);
+}
+
+.stats_card_body {
+    width: 70%;
+}
+
+/* mbaron stats */
+/* fillon pricing */
+.pricing {
+    display: flex;
+}
+
+.pricing_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 70vh;
+    position: relative;
+    align-items: center;
+
+
+}
+
+.pricing_card {
+    box-shadow: 5px 25px 28px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    border-radius: 3px;
+    background-color: #fff;
+    height: 80px;
+    width: 90%;
+    padding: 5px;
+
+}
+
+.pricing_card_img {
+    width: 80px;
+    height: 80px;
+    background-color: var(--skyblueColor);
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+}
+
+.pricing_card_text {
+    padding-left: 10px;
+    height: 85px;
+}
+
+.pricing_card_text>h2,
+.pricing_card_text>p,
+.pricing_card_price>h3,
+.pricing_card_price>h5 {
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    color: #555555;
+}
+
+.pricing_card_price {
+    height: 85px;
+
+}
+
+.pricing_card:first-child h3,
+.pricing_card:nth-child(2) h3 {
+    color: var(--orangeColor);
+}
+
+.pricing_card:nth-child(3) h3 {
+    color: var(--skyblueColor);
+}
+
+.oval_bg {
+    position: absolute;
+    rotate: 20deg;
+    z-index: -1;
+    width: 500px;
+    height: 400px;
+    border-radius: 300px;
+    background: var(--ovalBackground);
+}
+
+
+.pricing_subscription {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.pricing_subscription>* {
+    text-align: end;
+}
+
+.pricing_subscription>p {
+    width: 60%;
+}
+
+.pricing_links {
+    border-radius: 50px;
+    padding: 5px;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    box-shadow: 5px 25px 28px 0px rgba(0, 0, 0, 0.2);
+}
+
+#firstpricelink {
+    display: grid;
+    place-items: center;
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+    background-color: var(--orangeColor);
+}
+
+#secondpricelink {
+    width: 150px;
+    text-decoration: none;
+    color: #a1a1a1;
+    height: 50px;
+    display: grid;
+    place-items: center;
+}
+
+.pricing_section,
+.plans_sections,
+.tests_section {
+    padding: 100px 0 100px 0;
+}
+
+/* mbaron pricing */
+/* fillon plans */
+.plans {
+    display: flex;
+}
+
+.plan {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.plan_text>p,
+.plan_text>h3 {
+    width: 60%;
+}
+
+.plan:last-child {
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: end;
+}
+
+.plan:last-child>.plan_text {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.plan:last-child * {
+    text-align: end;
+}
+
+.plan_text {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plan_img {
+    position: relative;
+    width: 60%;
+}
+
+.plan_img>img {
+    width: 100%;
+}
+
+.oval_img_bg {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    rotate: 30deg;
+    z-index: -1;
+    width: 350px;
+    height: 250px;
+    border-radius: 300px;
+    background: var(--ovalBackground);
+}
+
+/* mbaron plans */
+
+/* fillon testimonials */
+.test_heading * {
+    text-align: center;
+}
+
+.test_heading {
+    padding-bottom: 100px;
+}
+
+.test_heading>p:first-child {
+    color: var(--orangeColor);
+    text-transform: uppercase;
+}
+
+.test_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.test_card {
+    padding: 20px;
+    width: 23%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 17px 25px 9px rgba(0, 0, 0, 0.1);
+}
+
+.test_card:nth-child(2) {
+    scale: 1.2;
+}
+
+.test_img {
+    border: 5px solid var(--skyblueColor);
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.test_img>img {
+    width: 100%;
+}
+
+.test_body {
+    width: 80%;
+}
+
+.test_body>* {
+    text-align: center;
+
+}
